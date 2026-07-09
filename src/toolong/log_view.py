@@ -279,6 +279,7 @@ class LogView(Horizontal):
         Binding("ctrl+f", "show_find_dialog", "Find", key_display="^f"),
         Binding("slash", "show_find_dialog", "Find", key_display="^f", show=False),
         Binding("ctrl+g", "goto", "Go to", key_display="^g"),
+        Binding("ctrl+z", "suspend_process", "Suspend", key_display="^z"),
     ]
 
     show_find: reactive[bool] = reactive(False)
